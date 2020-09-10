@@ -27,7 +27,7 @@ class YahooUser implements ResourceOwnerInterface
 
     public function getId()
     {
-        return $this->response['profile']['guid'];
+        return $this->response['sub'];
     }
 
     /**
@@ -51,7 +51,7 @@ class YahooUser implements ResourceOwnerInterface
      */
     public function getFirstName()
     {
-        return $this->response['profile']['givenName'];
+        return $this->response['given_name'];
     }
 
     /**
@@ -61,7 +61,7 @@ class YahooUser implements ResourceOwnerInterface
      */
     public function getLastName()
     {
-        return $this->response['profile']['familyName'];
+        return $this->response['family_name'];
     }
 
     /**
@@ -71,8 +71,8 @@ class YahooUser implements ResourceOwnerInterface
      */
     public function getEmail()
     {
-        if (!empty($this->response['profile']['emails'])) {
-            return $this->response['profile']['emails'][0]['handle'];
+        if (!empty($this->response['email'])) {
+            return $this->response['email'];
         }
     }
 
@@ -83,12 +83,12 @@ class YahooUser implements ResourceOwnerInterface
      */
     public function getAvatar()
     {
-        return $this->response['imageUrl'];
+        return $this->response['picture'];
     }
 
     public function setImageURL($url)
     {
-        $this->response['imageUrl'] = $url;
+        $this->response['picture'] = $url;
         return $this;
     }
 

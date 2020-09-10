@@ -34,8 +34,9 @@ class Yahoo extends AbstractProvider
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
         $guid = $token->getResourceOwnerId();
+        return 'https://api.login.yahoo.com/openid/v1/userinfo';
 
-        return 'https://social.yahooapis.com/v1/user/' . $guid . '/profile?format=json';
+//        return 'https://social.yahooapis.com/v1/user/' . $guid . '/profile?format=json';
     }
 
     /**
@@ -101,10 +102,12 @@ class Yahoo extends AbstractProvider
     protected function createResourceOwner(array $response, AccessToken $token)
     {
         $user = new YahooUser($response);
-
-        $imageUrl = $this->getUserImageUrl($response, $token);
-
-        return $user->setImageURL($imageUrl);
+//        echo json_encode($response, JSON_PRETTY_PRINT);
+//        exit;
+//        $imageUrl = $this->getUserImageUrl($response, $token);
+//
+//        return $user->setImageURL($imageUrl);
+        return $user;
     }
 
     /**
