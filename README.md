@@ -146,6 +146,7 @@ $ ./vendor/bin/phpunit
 ## Credits
 
 - [Ravishanker Kusuma](https://github.com/hayageek/) 
+- [Flashaimn Kevin](https://github.com/flashaim-kevin/) 
 
 
 ## License
