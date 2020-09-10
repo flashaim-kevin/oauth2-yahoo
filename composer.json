@@ -1,16 +1,12 @@
 {
-    "name": "hayageek/oauth2-yahoo",
+    "name": "flashaim-kevin/oauth2-yahoo",
     "description": "Yahoo OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
     "license": "MIT",
     "authors": [
         {
-            "name": "Ravishanker Kusuma",
-            "email": "hayageek@gmail.com",
-            "homepage": "http://hayageek.com"
-        },
-        {
-            "name": "Timothy Asp",
-            "email": "tim@asp.consulting"
+            "name": "Kevin",
+            "email": "kevin@flashaim.com",
+            "homepage": "https://flashaim.tv"
         }
     ],
     "keywords": [
