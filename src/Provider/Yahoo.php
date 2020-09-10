@@ -17,7 +17,7 @@ class Yahoo extends AbstractProvider
     /*
     https://developer.yahoo.com/oauth2/guide/flows_authcode/#step-2-get-an-authorization-url-and-authorize-access
     */
-    protected $language = "en-us";
+    protected $language = "zh-tw";
 
     private $imageSize = '192x192';
 
